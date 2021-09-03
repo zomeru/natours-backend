@@ -116,7 +116,6 @@ tourSchema.pre(/^find/, function (next) {
   next();
 });
 
-// eslint-disable-next-line prefer-arrow-callback
 tourSchema.post(/^find/, function (docs, next) {
   console.log(`Query took ${Date.now() - this.start} ms`);
   next();
