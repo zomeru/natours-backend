@@ -6,6 +6,7 @@ const helmet = require('helmet');
 const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
 const hpp = require('hpp');
+const cors = require('cors');
 
 const AppError = require('./utils/appError');
 const globalErrorHandler = require('./controllers/errorController');
@@ -15,6 +16,13 @@ const reviewRouter = require('./routes/reviewRoutes');
 const viewRouter = require('./routes/viewRoutes');
 
 const app = express();
+
+const corsOptions = {
+  origin: 'http://localhost:3000',
+  optionsSuccessStatus: 200, //
+};
+
+app.use(cors(corsOptions));
 
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
@@ -39,7 +47,9 @@ const limiter = rateLimit({
   windowMs: 60 * 60 * 1000,
   message: 'Too many requests from this IP. Please try again in an hour.',
 });
+console.log(limiter);
 app.use('/api/', limiter);
+// app.use('/api/');
 
 // Body parser, reading data from body into req.body
 app.use(express.json({ limit: '10kb' }));
@@ -72,6 +82,11 @@ app.use((req, res, next) => {
 });
 
 //? 2. ROUTES
+
+// app.use('/', viewRouter);
+// app.use('/api/v1/tours', cors(corsOptions), tourRouter);
+// app.use('/api/v1/users', cors(corsOptions), userRouter);
+// app.use('/api/v1/reviews', cors(corsOptions), reviewRouter);
 app.use('/', viewRouter);
 app.use('/api/v1/tours', tourRouter);
 app.use('/api/v1/users', userRouter);

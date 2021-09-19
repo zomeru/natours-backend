@@ -8,22 +8,26 @@
     },
     "ratingsAverage": 4.8,
     "ratingsQuantity": 6,
-    "images": ["tour-2-1.jpg", "tour-2-2.jpg", "tour-2-3.jpg"],
+    "images": [
+      "kawasan-falls-1.jpg",
+      "kawasan-falls-2.jpg",
+      "kawasan-falls-3.jpg"
+    ],
     "startDates": [
       "2021-06-19T09:00:00.000Z",
       "2021-07-20T09:00:00.000Z",
       "2021-08-18T09:00:00.000Z"
     ],
     "_id": "5c88fa8cf4afda39709c2955",
-    "name": "The Sea Explorer",
+    "name": "Kawasan Falls",
     "duration": 7,
     "maxGroupSize": 15,
     "difficulty": "medium",
     "guides": ["5c8a22c62f8fb814b56fa18b", "5c8a1f4e2f8fb814b56fa185"],
     "price": 497,
-    "summary": "Exploring the jaw-dropping US east coast by foot and by boat",
-    "description": "Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\nIrure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    "imageCover": "tour-2-cover.jpg",
+    "summary": "Kawasan Falls is a multi-layered waterfall system located in Barangay Matutinao in the town of Badian, Cebu.",
+    "description": "Kawasan Falls is a multi-layered waterfall system located in Barangay Matutinao in the town of Badian, Cebu. It is without doubt the most visited tourist attraction here in Badian.\nFamous for its beautiful turquoise water, Kawasan Falls sits at the foot of Mantalongon Mountain Range, approximately one kilometer from the national road of Badian and at least four hours of trekking from Osmeña Peak of Dalaguete. Its cold and clear water cascades through layers of waterfalls emanating from Kandayvic Spring before going to Matutinao River and the Tañon Strait.\nThe waterfall system consists of two main cascades both with deep natural pools ideal for swimming. The first cascade stands at approximately 40 meters while the less crowded second level has a height of approximately 20 meters and can be reached within ten minutes of trekking.",
+    "imageCover": "kawasan-falls.jpg",
     "locations": [
       {
         "_id": "5c88fa8cf4afda39709c2959",
